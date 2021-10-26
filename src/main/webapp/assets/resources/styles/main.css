@@ -1,0 +1,45 @@
+.brand-logo img {
+    height: 50px;
+    margin-top: 10px;
+}
+.sidenav {
+    background-color: #03a9f4 !important;
+}
+.sidenav li > a {
+    color: #fff !important;
+}
+h3.titulo {
+    font-size: 2rem;
+}
+.artista, .cd, .ano {
+    font-size: 1.4rem;
+}
+h4.musicas {
+    font-size: 1.2rem;
+}
+ol.musicas {
+    padding-left: 20px;
+    margin-top: 0;
+}
+.footer img {
+    height: 70px;
+}
+
+@media (max-width: 600px) {
+    .brand-logo img {
+        height: 40px;
+        margin-left: 300px !important;
+    }
+    .footer-copyright {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .brand-logo img {
+        margin-left: 500px;
+    }
+    span.texto {
+        display: none;
+    }
+}
