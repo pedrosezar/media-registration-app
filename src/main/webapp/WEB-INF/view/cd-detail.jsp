@@ -19,7 +19,7 @@
         </ol>
     </c:if>
     <c:if test="${empty musics}">
-        <span>Nenhum resultado encontrado!</span>
+        <span>Este CD não possui músicas!</span>
     </c:if>
 
     </jsp:body>

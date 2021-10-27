@@ -18,18 +18,18 @@
         <c:if test="${not empty cds}">
             <c:forEach var="cd" items="${cds}">
                 <tr>
-                    <td>${cd.id}</td>
+                    <td class="id">${cd.id}</td>
                     <td>${cd.artist}</td>
                     <td>${cd.title}</td>
                     <td>
-                        <a href="visualizar?codCD=${cd.id}" class="waves-effect waves-light orange btn"><i class="material-icons right">visibility</i><span class="texto">vizualizar</span></a>
+                        <a href="visualizar?codCD=${cd.id}" id="link" class="waves-effect waves-light orange btn"><i class="material-icons right">visibility</i><span class="texto">vizualizar</span></a>
                     </td>
                 </tr>
             </c:forEach>
         </c:if>
         <c:if test="${empty cds}">
                 <tr>
-                    <td colspan="4">Nenhum resultado encontrado!</td>
+                    <td colspan="4">Nenhum CD cadastrado!</td>
                 </tr>
         </c:if>
             </tbody>
