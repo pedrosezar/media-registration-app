@@ -7,6 +7,8 @@ import lombok.NonNull;
 public class MusicDTO {
 
     @NonNull
+    private Long id;
+    @NonNull
     private int track;
     @NonNull
     private String title;

@@ -23,6 +23,7 @@ public class MusicRegistrationController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         String cdId = request.getParameter("cd_id");
         String track = request.getParameter("track");
         String title = request.getParameter("title");

@@ -15,7 +15,7 @@ public class CdMapper {
     }
 
     public static CdDTO toDTO(Cd entity){
-        CdDTO dto = new CdDTO(entity.getArtist(), entity.getTitle(), entity.getYear());
+        CdDTO dto = new CdDTO(entity.getId(), entity.getArtist(), entity.getTitle(), entity.getYear());
         return dto;
     }
 

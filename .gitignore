@@ -1,4 +1,3 @@
 .idea/*
-src/main/resources/META-INF/data.sql
 src/test/*
 target/*

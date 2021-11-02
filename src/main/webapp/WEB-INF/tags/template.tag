@@ -1,5 +1,5 @@
 <%@ tag description="Template principal" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ attribute name="title"%>
 <jsp:useBean id="date" class="java.util.Date" />
 

@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@WebServlet(name = "CdListController", value = {"", "/listar-cds"})
+@WebServlet(name = "CdListController", urlPatterns = {"", "/listar-cds"})
 public class CdListController extends HttpServlet {
 
     CdService cdService = new CdService();
@@ -22,7 +22,7 @@ public class CdListController extends HttpServlet {
         List<Cd> cds = cdService.findAll();
         List<CdDTO> cdDTOs = cds.stream().map(cd -> CdMapper.toDTO(cd)).collect(Collectors.toList());
         request.setAttribute("cds", cdDTOs);
-        request.getRequestDispatcher("/WEB-INF/view/cd-list.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/view/index.jsp").forward(request, response);
     }
 
     @Override

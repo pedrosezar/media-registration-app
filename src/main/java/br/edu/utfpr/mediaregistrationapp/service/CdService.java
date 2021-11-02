@@ -8,4 +8,5 @@ public class CdService extends AbstractService<Long, Cd>{
     public CdService() {
         dao = new CdDAO();
     }
+
 }

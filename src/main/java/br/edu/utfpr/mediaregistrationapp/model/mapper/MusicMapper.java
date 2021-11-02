@@ -20,7 +20,7 @@ public class MusicMapper{
 
     public static MusicDTO toDTO(Music entity){
         CdDTO cdDTO = CdMapper.toDTO(entity.getCd());
-        MusicDTO dto = new MusicDTO(entity.getTrack(), entity.getTitle(), cdDTO);
+        MusicDTO dto = new MusicDTO(entity.getId(), entity.getTrack(), entity.getTitle(), cdDTO);
         return dto;
     }
 

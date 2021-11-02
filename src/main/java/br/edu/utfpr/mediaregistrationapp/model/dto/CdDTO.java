@@ -7,6 +7,8 @@ import lombok.NonNull;
 public class CdDTO {
 
     @NonNull
+    private Long id;
+    @NonNull
     private String artist;
     @NonNull
     private String title;
